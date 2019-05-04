@@ -3,15 +3,15 @@ package com.kunzen.java;
 /**
  * 
  * @author kunzen
- * Selection Sort Unstable version
- * Unstable means order of occurence of the same values in the array is not maintained after sorting.
+ * Stable selection sort. In this sort swiping is avoided so that the order of the elements having same values are maintained after the sort.
+ *
  */
-public class SelectionSort {
+public class SelectionSortStable {
 	static int [] a = {4,6,1,9,63,2,78,34};
-  
-	static int[] selectionSort(int [] a){
+	  
+	static int[] selectionSortStable(int [] a){
 		
-		int i,j,min_idx,temp;
+		int i,j,min_idx,key;
 		int n=a.length;
 		
 		for(i=0;i<n-1;i++){
@@ -23,9 +23,14 @@ public class SelectionSort {
 				}
 			}
 			
-			temp=a[i];
-			a[i]=a[min_idx];
-			a[min_idx]=temp;
+		 key =a[min_idx];
+		 
+		 while(min_idx>i){
+			 a[min_idx]=a[min_idx-1];
+			 min_idx--;
+		 }
+		
+		 a[i]=key;
 			
 		}
 		
@@ -33,7 +38,7 @@ public class SelectionSort {
 	}
 	
 	public static void main(String[] args) {
-	  int [] sortRes = selectionSort(a);
+	  int [] sortRes = selectionSortStable(a);
 	  System.out.println("Sorted Array=>");
 	  for(int i:sortRes){
 		  System.out.print(i+",");
