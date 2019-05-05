@@ -1,4 +1,4 @@
-package com.kunzen.java;
+package com.kunzen.designpattern.java;
 
 import java.lang.reflect.Constructor;
 

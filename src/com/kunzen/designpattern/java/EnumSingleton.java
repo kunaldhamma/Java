@@ -1,4 +1,4 @@
-package com.kunzen.java;
+package com.kunzen.designpattern.java;
 
 public class EnumSingleton {
 	private static EnumSingleton INSTANCE= new EnumSingleton();

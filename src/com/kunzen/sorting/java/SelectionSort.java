@@ -1,4 +1,4 @@
-package com.kunzen.java;
+package com.kunzen.sorting.java;
 
 /**
  * 

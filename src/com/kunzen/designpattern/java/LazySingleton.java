@@ -1,4 +1,4 @@
-package com.kunzen.java;
+package com.kunzen.designpattern.java;
 
 public class LazySingleton {
 	private static LazySingleton instance;

@@ -1,4 +1,4 @@
-package com.kunzen.java;
+package com.kunzen.sorting.java;
 
 public class BubbleSort {
 	static int [] a = {4,6,1,9,63,2,78,34};

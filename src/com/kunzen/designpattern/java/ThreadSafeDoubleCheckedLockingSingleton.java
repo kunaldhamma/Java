@@ -1,4 +1,4 @@
-package com.kunzen.java;
+package com.kunzen.designpattern.java;
 
 public class ThreadSafeDoubleCheckedLockingSingleton {
 	private static ThreadSafeDoubleCheckedLockingSingleton instance;
