@@ -7,15 +7,20 @@ public class BitwiseOperators {
         int b = 7; 
   
         // bitwise and 
-        // 0101 & 0111=0101 = 5 
+        // 0101 
+       //& 0111
+       // =0101 = 5 
         System.out.println("a&b = " + (a & b)); 
   
         // bitwise or 
-        // 0101 | 0111=0111 = 7 
+        // 0101 
+       //| 0111
+       // =0111 = 7 
         System.out.println("a|b = " + (a | b)); 
   
         // bitwise xor 
-        // 0101 ^ 0111=0010 = 2 
+        // 0101 
+       //^ 0111=0010 = 2 
         System.out.println("a^b = " + (a ^ b)); 
   
         // bitwise and 
@@ -37,7 +42,7 @@ public class BitwiseOperators {
         
         /**
          * 2’s complement of a binary number is 1 added to the 1’s complement of the binary number.
-         * to change the sign of a number from positive to negative and vice versa we'v to use 2's complement of a number.Ex -10 is 2's complement of 10
+         * to change the sign of a number from positive to negative and vice versa we've to use 2's complement of a number.Ex -10 is 2's complement of 10
          */
         int towcomp= ~a+1;
         System.out.println("2's complement of a(5) =" +towcomp);
@@ -59,7 +64,7 @@ public class BitwiseOperators {
         // similar to 5/(2^2) 
         System.out.println("b>>2 = " + (b >> 2)); 
   
-        // unsigned right shift operator, there is not corresponding unsigned left shift operator(<<<)
+        // unsigned right shift operator, there is no corresponding unsigned left shift operator(<<<)
         System.out.println("b>>>2 = " + (b >>> 2)); 
     } 
 } 
